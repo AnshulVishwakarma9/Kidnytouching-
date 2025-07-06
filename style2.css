@@ -1,0 +1,214 @@
+.yt-promo {
+  position: relative;
+  background: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.yt-box {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yt-icon {
+  font-size: 5rem;
+  background: #ff0000;
+  color: #fff;
+  padding: 1rem 1.3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+.yt-icon:hover {
+  transform: scale(1.1);
+}
+.yt-text {
+  margin-top: 1rem;
+}
+.yt-text p {
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.yt-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0.3rem 0;
+}
+.yt-text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.yt-handle {
+  margin-top: 1rem;
+  background: #ff0000;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+.arc {
+  height: 25px;
+  background: radial-gradient(circle at center, #ff0000, transparent 70%);
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+}
+.top-arc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.bottom-arc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#about-channel {
+  background: linear-gradient(to right, #f4f4f4, #ffffff);
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #1f1f1f;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d62828;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.about-subtitle {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 50px 0 15px;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+
+.button-group {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.insta-btn {
+  background-color: #e1306c;
+}
+
+.yt-btn {
+  background-color: #0077ff;
+}
+/* Signup Popup Style */
+.signup-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.signup-box {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+.signup-box input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.signup-box button {
+  padding: 12px 20px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-box button:hover {
+  background-color: #005ec2;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
