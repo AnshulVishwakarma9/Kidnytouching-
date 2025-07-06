@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kidney Touching</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+<link rel="manifest" href="/assets/site.webmanifest">
+<link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">🔔Kidney Touching</div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-menu">
+      <li class="dropdown">
+        <a href="#">Menu</a>
+        <ul class="dropdown-menu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="#" id="signup"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+      <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+    </ul>
+  </div>
+</nav>
+<!-- POPUP SIGNUP FORM (HIDDEN BY DEFAULT) -->
+<div id="signup-popup" class="signup-popup">
+  <div class="signup-box">
+    <span class="close-btn" onclick="closeSignup()">&times;</span>
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+      <p id="signupMessage" style="margin-top: 10px; color: green;"></p>
+    </form>
+  </div>
+</div>
+  <header>
+    <img src="Assets/banner.jpg" alt="Banner Image">
+  </header>
+  <section class="yt-promo">
+  <div class="arc top-arc"></div>
+  
+  <div class="yt-box">
+    <a href="https://youtube.com/@kidnytouching?si=p_ImLRl1ZbwkAIQT" target="_blank" class="yt-icon">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <div class="yt-text">
+      <p>SUBSCRIBE(&#128276) TO MY</p>
+      <h1>YouTube</h1>
+      <h2>CHANNEL</h2>
+      <div class="yt-handle">@kidnytouching</div>
+    </div>
+  </div>
+
+  <div class="arc bottom-arc"></div>
+</section>
+  <main class="main-grid">
+  <div class="content-card">
+    <img src="Assets/vlog.jpeg" alt="Vlog Thumbnail">
+    <h2>Vlogs</h2>
+    <p>Step inside our journey! Explore stories, dev lifestyle, and behind-the-scenes insights with our curated vlog series.</p>
+    <a href="https://youtube.com/@kidnytouching?si=k6dIIXL8rbEVqy1o" target="_blank" class="btn">Watch Vlogs</a>
+  </div>
+
+  <div class="content-card">
+    <img src="Assets/video (1).jpeg" alt="Video Thumbnail">
+    <h2>Videos</h2>
+    <p>Dive into expert breakdowns, frontend tutorials, and design systems that shape modern web experiences.</p>
+    <a href="https://youtube.com/@kidnytouching?si=k6dIIXL8rbEVqy1o" target="_blank" class="btn">View Videos</a>
+  </div>
+
+  <div class="content-card">
+    <img src="Assets/devoloperzone.jpeg" alt="Developer Zone">
+    <h2>Developer Zone</h2>
+    <p>Meet our passionate devs and discover tools, stacks, and workflows powering Kidney Touching’s sleek UI magic.</p>
+    <a href="#developer" class="btn">Explore Team</a>
+  </div>
+</main>
+  <section id="about-channel">
+  <div class="about-container">
+    <h2 class="about-title">🎬 About Our YouTube Channel</h2>
+    <p class="about-description">
+      We craft high-impact AI-driven videos that inform, entertain, and connect. From fast-paced shorts to thought-provoking content — we merge creativity with innovation to deliver real value.
+    </p>
+
+    <h3 class="about-subtitle">📌 Our Vision</h3>
+    <p class="about-description">
+      We aim to empower the next-gen creators by using technology as a creative tool. Our mission is to redefine how stories are told in the digital world.
+    </p>
+
+    <div class="button-group">
+      <a href="https://www.instagram.com/kidny.touching?igsh=MWwxeGFjdWs2cGc5ZQ==" target="_blank" class="custom-btn insta-btn">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" />
+        Follow on Instagram
+      </a>
+      <a href="https://youtube.com/@kidnytouching?si=p_ImLRl1ZbwkAIQT" target="_blank" class="custom-btn yt-btn">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube" />
+        Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+  <footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>Kidney Touching</h3>
+      <p>Delivering smooth frontend experiences with a human touch.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#vlogs">Vlogs</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="https://www.instagram.com/kidny.touching?igsh=MWwxeGFjdWs2cGc5ZQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@kidnytouching?si=T98Fl5NFF_dh3511" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kidney Touching. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
